@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.HistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Buy"
+        android:fontFamily="@font/handlee"
+        android:textSize="20sp"
+        android:textColor="@color/TextColor"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/itemImageHistoryRecent"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/food_start_page"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <TextView
+                android:id="@+id/nameOfItemRecentHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Thakali"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/itemImageHistoryRecent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceTVrecentHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:text="$120"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/itemImageHistoryRecent"
+                app:layout_constraintTop_toBottomOf="@+id/nameOfItemRecentHistory" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#0BE365"
+                android:id="@+id/orderStatusHistoryCardView"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.931"
+                app:layout_constraintStart_toEndOf="@+id/itemImageHistoryRecent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Previous Buy"
+        android:gravity="center"
+        android:fontFamily="@font/handlee"
+        android:textSize="20sp"
+        android:textColor="@color/TextColor"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_history_previous"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        tools:itemCount="10"
+        tools:listitem="@layout/history_items" />
+
+</LinearLayout>

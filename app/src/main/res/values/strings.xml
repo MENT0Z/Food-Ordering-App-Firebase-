@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">food_ordering</string>
+    <string name="proj_name">HomyTst</string>
+    <string name="usename_hint">Enter UserName</string>
+    <string name="firstName_hint">Enter FirstName</string>
+    <string name="last_hint">Enter LastName</string>
+    <string name="email_hint">Enter Email or Phone Number</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="repassword_hint">ReType Password</string>
+    <string name="App_Thego">Delivers HomeTest Food</string>
+    <string name="Location_page_text">To provide you with the best dining experience, we need your permission to access your device\'s location. By enabling location services, we can offer personalized restaurant recommendations, accurate delivery estimates, and ensure a seamless food delivery experience."</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

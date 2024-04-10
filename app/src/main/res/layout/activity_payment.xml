@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Payment">
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/back_btn_payment"
+    android:background="@android:color/transparent"
+    android:src="@drawable/baseline_arrow_back_24"
+    android:layout_margin="5dp"
+    android:layout_marginTop="3dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:gravity="center"
+        android:fontFamily="@font/baloo_chettan"
+        android:textSize="20sp"
+        android:textColor="@color/TextColor"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:elevation="2dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:background="@drawable/profile_linear_layout"
+        >
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/finger_paint"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/nameETPayment"
+            android:layout_height="50dp"
+            android:ems="13"
+            android:text="Madan Raj Upadhyay"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:elevation="2dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:background="@drawable/profile_linear_layout"
+        >
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/finger_paint"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/AddressETPayment"
+            android:layout_height="50dp"
+            android:ems="13"
+            android:textSize="18sp"
+            android:text="SRM GreenPearl Park Chennai TmailNadu 603203 India"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:elevation="2dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:background="@drawable/profile_linear_layout"
+        >
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/finger_paint"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/PhoneETPayment"
+            android:layout_height="50dp"
+            android:ems="13"
+            android:text="9035225406"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:elevation="2dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:background="@drawable/profile_linear_layout"
+        >
+        <TextView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/finger_paint"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/PaymentMethodETPayment"
+            android:layout_height="50dp"
+            android:ems="13"
+            android:text="Cash On Delivery"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:elevation="2dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:background="@drawable/profile_linear_layout"
+        >
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/finger_paint"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/TotalAmountTVPayment"
+            android:layout_height="match_parent"
+            android:ems="13"
+            android:textSize="22sp"
+            android:fontFamily="@font/baloo_chettan"
+            android:text="$1500"
+            android:gravity="right|center"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/TextColor"
+        android:text="Place My Order"
+        android:textSize="20sp"
+        android:fontFamily="@font/finger_paint"
+        android:id="@+id/btn_to_placeMyOrderPayment"/>
+
+</LinearLayout>
